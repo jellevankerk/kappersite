@@ -6,9 +6,10 @@
 	<meta charset="utf-8" />
 	{% load staticfiles %}
 	<link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}" type = "text/css"/>
-	<link rel="stylesheet" href="{% static 'main/css/style.css' %}" type = "text/css"/>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href="{% static 'main/css/contact.css' %}" rel='stylesheet' type='text/css'
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Teko:400,500" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
+	<link href="{% static 'main/css/date.css' %}" rel='stylesheet' type='text/css'
 	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
 	
 	<style type="text/css">
@@ -20,9 +21,8 @@
 </head>
 
 <body class="body" style="background-color:#f6f6f6">
-<section id="first">
-	
-		<nav class="navbar navbar-fixed-top navbar-default_1">
+<section id="first" style="background-image: url(../../static/main/img/slider_background1.jpg); background-size: cover;background-repeat:no-repeat;background-position: fixed"; >
+		<nav class="navbar navbar-fixed-top navbar-default_1" style="height: 91px;">
 		  <div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -33,16 +33,16 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand_1" href="#">FAYROZ</a>
+			  <a class="navbar-brand" style="margin-left: 230px; margin-right: 160px; margin-top: 20px; font-size: 40pt; font-family: 'Teko', sans-serif; color: white;" href="#">FAYROZ</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			  <ul class="nav navbar-nav style_1">
-				<li ><a href="#">OVER ONS</a></li>
-				<li><a href="#">ONZE DIENSTEN</a></li>
-				<li><a href="#">OPENINGSTIJDEN</a></li>
-				<li><a href="#">PRIJSLIJST</a></li>
-				<li><a href="#">CONTACT</a></li>
+			  <ul class="nav navbar-nav" style="margin-left: 20px; margin-right: 20px; margin-top: 15px;font-family: 'Roboto Slab', serif;  ">
+				<li><a style="color: white; " href="#">OVER ONS</a></li>
+				<li><a style="color: white;"href="#">ONZE DIENSTEN</a></li>
+				<li><a style="color: white;"href="#">OPENINGSTIJDEN</a></li>
+				<li><a style="color: white;"href="#">PRIJSLIJST</a></li>
+				<li><a style="color: white;"href="#">CONTACT</a></li>
 				
 			  </ul>			  
 			</div><!-- /.navbar-collapse -->
@@ -50,22 +50,17 @@
 		  <hr class="my-4">
 		</nav>
 		
-		<div class="row">
-			<div class="jumbotron text-center jumbotron_1">
-			  <h1 class="display-4">FAYROZ</h1>
-			  
-			  <p class="lead">Dé kapper zonder afspraak</p>
-			  <img alt="icon" src="../../static/main/img/circle_arrow_down.png">
-			  
-			</div>
+		<div class="row text-center">
+			<img alt="logo" src="../../static/main/img/Logo.png" style="margin-top: 200px; height: 200px; width: 600px;">	  	
+		</div>
+		<div class="row text-center">
+			<img href="#" alt="icon" src="../../static/main/img/knopie.png" style="margin-top: 150px; margin-bottom: 150px; width: 50px; height: 50px;">
+		</div>
 		
 		
-	
 </section>
-<section id= "second" style="margin: 0 auto; padding: 10px; background-color: #EEEEEE;">
-
-	
-		<nav class="bs-docs-nav navbar navbar-default_2">
+<section id= "second" style="margin: 0 auto; padding: 0px; background-color: #EEEEEE;">
+			<nav class="bs-docs-nav navbar" style="margin: 0; padding: 0px; shape-margin: 100; height: 91px;background-color:#1f2226;min-width: inherit;" >
 			  <div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -76,16 +71,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-				  <a class="navbar-brand_1" href="#">FAYROZ</a>
+				  <a class="navbar-brand" href="#" style="margin-left: 230px; margin-right: 160px; margin-top: 20px; font-size: 40pt; font-family: 'Teko', sans-serif; color: white;">FAYROZ</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-				  <ul class="nav navbar-nav style_1">
-					<li ><a href="#">OVER ONS</a></li>
-					<li><a href="#">ONZE DIENSTEN</a></li>
-					<li><a href="#">OPENINGSTIJDEN</a></li>
-					<li><a href="#">PRIJSLIJST</a></li>
-					<li><a href="#">CONTACT</a></li>
+				  <ul class="nav navbar-nav" style="margin-left: 20px; margin-right: 20px; margin-top: 15px; font-family: 'Roboto Slab', serif;">
+					<li><a style="color: white;" href="#">OVER ONS</a></li>
+					<li><a style="color: white;"href="#">ONZE DIENSTEN</a></li>
+					<li><a style="color: white;"href="#">OPENINGSTIJDEN</a></li>
+					<li><a style="color: white;"href="#">PRIJSLIJST</a></li>
+					<li><a style="color: white;"href="#">CONTACT</a></li>
+				
 
 				  </ul>			  
 				</div><!-- /.navbar-collapse -->
@@ -93,15 +89,15 @@
 			</nav>
 			
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4" style="padding: 0px;">
 				  	<img src="../../static/main/img/section2.png" class="img-responsive" alt="Responsive image">
 				</div>
-				<div class="col-lg-8">
-					<div class="jumbotron text-left jumbotron_2">
-			  			<h1 class="display-4">Welkom</h1>
-			  				<p class="lead">Al meer dan 20 jaar zijn wij de kapsalon in Oss waar je zonder afspraak geholpen wordt. Ons team bestaat uit mannen en een vrouw die zich richten op uw haar-, gezichts- en baardverzorging. Met een kopje koffie of thee bespreken we de mogelijkheden en modellen die bij jouw persoonlijkheid passen. Vervolgens gaan wij aan de slag met onze professionele apparatuur om uw fris en fruitig eruit te laten zien. In onze kapsalon wordt nog met de kam en schaar gewerkt en zo min mogelijk met tondeuse. 
+				<div class="col-lg-8" >
+					<div class="jumbotron" style="margin-left: 100px; margin-right: 220px;" >
+			  			<h1 class="display-4" style="font-size: 30pt; font-family: 'Teko', sans-serif;">Welkom,</h1>
+			  				<p class="lead" style="font-size: 14pt; font-family: 'Roboto Slab', serif;">Al meer dan 20 jaar zijn wij de kapsalon in Oss waar je zonder afspraak geholpen wordt. Ons team bestaat uit mannen en een vrouw die zich richten op uw haar-, gezichts- en baardverzorging. Met een kopje koffie of thee bespreken we de mogelijkheden en modellen die bij jouw persoonlijkheid passen. Vervolgens gaan wij aan de slag met onze professionele apparatuur om uw fris en fruitig eruit te laten zien. In onze kapsalon wordt nog met de kam en schaar gewerkt en zo min mogelijk met tondeuse.</p> 
+			  				<p class="lead" style="font-size: 14pt; font-family: 'Roboto Slab', serif;"> Wij laten jou pas gaan als jij tevreden bent, want service en kwaliteit is bij ons de hoogste prioriteit. Kom gerust een keer langs zonder afspraak zodat wij jou kunnen helpen. Kapsalon Fayroz is dé kapper voor iedereen!</p>
 
-Wij laten jou pas gaan als jij tevreden bent, want service en kwaliteit is bij ons de hoogste prioriteit. Kom gerust een keer langs zonder afspraak zodat wij jou kunnen helpen. Kapsalon Fayroz is dé kapper voor iedereen! </p>
 			 		</div>
 				</div>
 				
@@ -113,8 +109,8 @@ Wij laten jou pas gaan als jij tevreden bent, want service en kwaliteit is bij o
 	
 </section>
 <section id="third" style="background-color: white; margin: 0 auto;">
-	<div class="container">
-		<div class="row text-left">
+	<div class="container" style="margin-left: 200px;">
+		<div class="row text-left" style="margin-top: 80px;">
 			<div class="col-lg-6" style="color:#1f2226">
 				<h1>onze dienste</h1>
 			</div>
@@ -123,63 +119,71 @@ Wij laten jou pas gaan als jij tevreden bent, want service en kwaliteit is bij o
 			</div>	
 			
 		</div>	
-		<div class="row">
+		
+		<div class="row" style="margin-bottom: 100px; margin-top: 100px;">
 			<div class="col-lg-6" style="color:#1f2226">
-				<h1>TRIMMEN</h1> 
-				<p>Met onze profesionele gereedschappen zorgen wij ervoor dat jouw kapsel er prachtig en modieus uitziet.</p>
-			</div>
-			<div class="col-lg-6">
-				<h1>test</h1>
-				<p>test test</p>
-			</div>
+				<div class="col-lg-2">
+					<img src="../../static/main/img/electric-razor.png" class="img-responsive" style="margin-bottom: 40px;">
+				</div>
+				<div class="col=lg-10" style="margin-top: -20px; margin-left: 100px;">
+					<h1 style="font-size: 20px; ">TRIMMEN</h1> 
+					<p style="margin-top: 0px; margin-right: 100px; font-size: 13pt;">Met onze profesionele gereedschappen zorgen wij ervoor dat jouw kapsel er prachtig en modieus uitziet.</p>
+				</div>
+			</div> 
+			<div class="col-lg-6" style="color:#1f2226">
+				<div class="col-lg-2">
+					<img src="../../static/main/img/scheren.png" class="img-responsive" style="margin-bottom: 40px;">
+				</div>
+				<div class="col=lg-10" style="margin-top: -20px; margin-left: 100px;">
+					<h1 style="font-size: 20px; ">SCHEREN</h1> 
+					<p style="margin-top: 0px; margin-right: 100px; font-size: 13pt;">Met zorgvuldigheid en precisie scheren en countouren wij jouw baard tot een mooi en strak model.</p>
+				</div>
+			</div> 
 		</div>
-		<div class="row">
+		<div class="row" style="margin-bottom: 100px; margin-top: 100px;">
 			<div class="col-lg-6" style="color:#1f2226">
-				<h1>TRIMMEN</h1> 
-				<p>Met onze profesionele gereedschappen zorgen wij ervoor dat jouw kapsel er prachtig en modieus uitziet.</p>
-			</div>
-			<div class="col-lg-6">
-				<h1>test</h1>
-				<p>test test</p>
-			</div>
-		</div>
-		<div class="row">
+				<div class="col-lg-2">
+					<img src="../../static/main/img/styling.png" class="img-responsive" style="margin-bottom: 40px;">
+				</div>
+				<div class="col=lg-10" style="margin-top: -20px; margin-left: 100px;">
+					<h1 style="font-size: 20px; ">STYLING</h1> 
+					<p style="margin-top: 0px; margin-right: 100px; font-size: 13pt;">Samen kijken wij met jou welk model het beste bij jouw persoonlijkheid past voor een mooi eindresultaat..</p>
+				</div>
+			</div> 
 			<div class="col-lg-6" style="color:#1f2226">
-				<h1>TRIMMEN</h1> 
-				<p>Met onze profesionele gereedschappen zorgen wij ervoor dat jouw kapsel er prachtig en modieus uitziet.</p>
-			</div>
-			<div class="col-lg-6">
-				<h1>test</h1>
-				<p>test test</p>
-			</div>
+				<div class="col-lg-2">
+					<img src="../../static/main/img/knippen.png" class="img-responsive" style="margin-bottom: 40px;">
+				</div>
+				<div class="col=lg-10" style="margin-top: -20px; margin-left: 100px;">
+					<h1 style="font-size: 20px; ">KNIPPEN</h1> 
+					<p style="margin-top: 0px; margin-right: 100px; font-size: 13pt;">Bij mannen en vrouwen knippen wij de dode haarpunten weg zodat het haar er weer gezond en levend uit ziet.</p>				
+				</div>
+			</div> 
 		</div>			
 	</div>
 	
 </section>
-<section  id="fourth">
+<section  id="fourth" style="background-color: #1f2226; background-image: url(../../static/main/img/clock.png); background-position: left; background-repeat: no-repeat; background-size: 300px 100px;">
 	<div class="container"> 
-		<div class="row">
-			<div class="col-lg-2">
-				<h1>test</h1>
-			</div>
-			<div class="col-lg-2">
-				<h1>test</h1>
-			</div>
-			<div class="col-lg-2">
-				<h1>test</h1>
-			</div>
-			<div class="col-lg-2">
-				<h1>test</h1>
-			</div>
-			<div class="col-lg-2">
-				<h1>test</h1>
-			</div>
-			<div class="col-lg-2">
-				<h1>test</h1>
-			</div>
-			
+		<div class="row business-hours">
+			<ul class="opening-hours">
+				<div class="col-lg-1">	
+				</div>
+				<div class="col-lg-3">
+				   	<li>Monday <span >9:00-22:00</span></li>
+					<li>Tuesday <span >9:00-22:00</span></li>
+					<li>Wednesday <span >9:00-22:00</span></li>
+				</div>
+				<div class="col-lg-3">
+				   	<li>Thursday <span >9:00-22:00</span></li>
+					<li>Friday <span >9:00-23:30</span></li>
+					<li>Saturday <span >14:00-23:30</span></li>
+				</div>
+				<div class="col-lg-1">
+					
+				</div>       														
+			</ul>
 		</div>
-	</div>
 </section>	
 <section id="fifth" style="background-color: white;">
 	<div class="container">
@@ -252,6 +256,7 @@ Wij laten jou pas gaan als jij tevreden bent, want service en kwaliteit is bij o
 <script src="../../static/main/js/bootstrap.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
 <script src="../../static/main/js/contact.js" ></script>
+<script src="../../static/main/js/date.js"></script>
     
     
 </body>

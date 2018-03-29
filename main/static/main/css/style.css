@@ -3,12 +3,14 @@ padding: 0  ;}
 
 #first{background-image: url("../img/slider_background1.jpg");
 background-size: cover;
+background-repeat: repeat;
+background-position: fixed;
+}
+#test{
+background-image: url(../img/clock.png);
 background-repeat: no-repeat;
-background-position: fixed;}
-#fourth{
-background-repeat: no-repeat;
-background-position: left;
-background-color: #1f2226;
+background-position: left  ;
+background-color: brown;
 background-size: cover;}
 
 .jumbotron_1 {
