@@ -1,3 +1,6 @@
 .business-hours .opening-hours li.today {
-color: #ffac0c; 
+color: #1f2226; background-color: white;
 }
+.navbar-fixed-top { background-color: transparent; transition: background-color 2s ease 0s;}
+.navbar-fixed-top.opaque { background-color: rgba(255,255,255,0);transition: background-color 2s ease 0s;
+

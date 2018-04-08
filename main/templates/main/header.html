@@ -6,10 +6,10 @@
 	<meta charset="utf-8" />
 	{% load staticfiles %}
 	<link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}" type = "text/css"/>
-	
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Teko:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="../../static/main/css/full-slider.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Teko:500" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
-	<link href="{% static 'main/css/date.css' %}" rel='stylesheet' type='text/css'
+	<link rel="stylesheet" href="../../static/main/css/date.css" type="text/css"
 	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
 	
 	<style type="text/css">
@@ -22,10 +22,10 @@
 
 <body class="body" style="background-color:#f6f6f6">
 <section id="first" style="background-image: url(../../static/main/img/slider_background1.jpg); background-size: cover;background-repeat:no-repeat;background-position: fixed"; >
-		<nav class="navbar navbar-fixed-top navbar-default_1" style="height: 91px;">
-		  <div class="container-fluid">
+		<nav class="navbar navbar-default_1" style="height: 91px;">
+		  <div class="container-fluid" >
 			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
+			<div class="navbar-header" >
 			  <button type="button" class="navbar-toggle collapsed btn btn-default" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 				<span class="sr-only">Toggle navigation</span>
@@ -37,12 +37,12 @@
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			  <ul class="nav navbar-nav" style="margin-left: 20px; margin-right: 20px; margin-top: 15px;font-family: 'Roboto Slab', serif;  ">
-				<li><a style="color: white; " href="#">OVER ONS</a></li>
-				<li><a style="color: white;"href="#">ONZE DIENSTEN</a></li>
-				<li><a style="color: white;"href="#">OPENINGSTIJDEN</a></li>
-				<li><a style="color: white;"href="#">PRIJSLIJST</a></li>
-				<li><a style="color: white;"href="#">CONTACT</a></li>
+			  <ul class="nav navbar-nav bs-docs-nav" style="margin-left: 20px; margin-right: 20px; margin-top: 15px;font-family: 'Roboto Slab', serif;  ">
+				<li><a style="color: white; " href="#overons">OVER ONS</a></li>
+				<li><a style="color: white;"href="#onzediensten">ONZE DIENSTEN</a></li>
+				<li><a style="color: white;"href="#openingstijden">OPENINGSTIJDEN</a></li>
+				<li><a style="color: white;"href="#prijslijst">PRIJSLIJST</a></li>
+				<li><a style="color: white;"href="#contact">CONTACT</a></li>
 				
 			  </ul>			  
 			</div><!-- /.navbar-collapse -->
@@ -54,12 +54,12 @@
 			<img alt="logo" src="../../static/main/img/Logo.png" style="margin-top: 200px; height: 200px; width: 600px;">	  	
 		</div>
 		<div class="row text-center">
-			<img href="#" alt="icon" src="../../static/main/img/knopie.png" style="margin-top: 150px; margin-bottom: 150px; width: 50px; height: 50px;">
+			<span class="pulse"><img  alt="icon" src="../../static/main/img/knopie.png" style="margin-top: 150px; margin-bottom: 150px; width: 50px; height: 50px;"></span>
 		</div>
 		
 		
 </section>
-<section id= "second" style="margin: 0 auto; padding: 0px; background-color: #EEEEEE;">
+<section class="bs-docs-section" id="overons" style="margin: 0 auto; padding: 0px; background-color: #EEEEEE;">
 			<nav class="bs-docs-nav navbar" style="margin: 0; padding: 0px; shape-margin: 100; height: 91px;background-color:#1f2226;min-width: inherit;" >
 			  <div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -76,11 +76,11 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 				  <ul class="nav navbar-nav" style="margin-left: 20px; margin-right: 20px; margin-top: 15px; font-family: 'Roboto Slab', serif;">
-					<li><a style="color: white;" href="#">OVER ONS</a></li>
-					<li><a style="color: white;"href="#">ONZE DIENSTEN</a></li>
-					<li><a style="color: white;"href="#">OPENINGSTIJDEN</a></li>
-					<li><a style="color: white;"href="#">PRIJSLIJST</a></li>
-					<li><a style="color: white;"href="#">CONTACT</a></li>
+					<li><a style="color: white;" href="#overons">OVER ONS</a></li>
+					<li><a style="color: white;"href="#onzediensten">ONZE DIENSTEN</a></li>
+					<li><a style="color: white;"href="#openingstijden">OPENINGSTIJDEN</a></li>
+					<li><a style="color: white;"href="#prijslijst">PRIJSLIJST</a></li>
+					<li><a style="color: white;"href="#contact">CONTACT</a></li>
 				
 
 				  </ul>			  
@@ -88,13 +88,13 @@
 			  </div><!-- /.container-fluid -->
 			</nav>
 			
-			<div class="row">
+			<div class="row " >
 				<div class="col-lg-4" style="padding: 0px;">
 				  	<img src="../../static/main/img/section2.png" class="img-responsive" alt="Responsive image">
 				</div>
 				<div class="col-lg-8" >
 					<div class="jumbotron" style="margin-left: 100px; margin-right: 220px;" >
-			  			<h1 class="display-4" style="font-size: 30pt; font-family: 'Teko', sans-serif;">Welkom,</h1>
+			  			<h1 class="display-4" style="font-size: 40pt; font-family: 'Teko', sans-serif;">Welkom,</h1>
 			  				<p class="lead" style="font-size: 14pt; font-family: 'Roboto Slab', serif;">Al meer dan 20 jaar zijn wij de kapsalon in Oss waar je zonder afspraak geholpen wordt. Ons team bestaat uit mannen en een vrouw die zich richten op uw haar-, gezichts- en baardverzorging. Met een kopje koffie of thee bespreken we de mogelijkheden en modellen die bij jouw persoonlijkheid passen. Vervolgens gaan wij aan de slag met onze professionele apparatuur om uw fris en fruitig eruit te laten zien. In onze kapsalon wordt nog met de kam en schaar gewerkt en zo min mogelijk met tondeuse.</p> 
 			  				<p class="lead" style="font-size: 14pt; font-family: 'Roboto Slab', serif;"> Wij laten jou pas gaan als jij tevreden bent, want service en kwaliteit is bij ons de hoogste prioriteit. Kom gerust een keer langs zonder afspraak zodat wij jou kunnen helpen. Kapsalon Fayroz is dé kapper voor iedereen!</p>
 
@@ -108,11 +108,11 @@
 	
 	
 </section>
-<section id="third" style="background-color: white; margin: 0 auto;">
+<section class="bs-docs-section" id="onzediensten" style="background-color: white; margin: 0 auto;">
 	<div class="container" style="margin-left: 200px;">
 		<div class="row text-left" style="margin-top: 80px;">
 			<div class="col-lg-6" style="color:#1f2226">
-				<h1>onze dienste</h1>
+				<h1 style="font-family: 'Teko', sans-serif; font-size: 40pt;" >Onze diensten</h1>
 			</div>
 			<div class="col-lg-6">
 			
@@ -120,7 +120,7 @@
 			
 		</div>	
 		
-		<div class="row" style="margin-bottom: 100px; margin-top: 100px;">
+		<div class="row" style="margin-bottom: 100px; margin-top: 80px; font-family: 'Roboto Slab', serif;">
 			<div class="col-lg-6" style="color:#1f2226">
 				<div class="col-lg-2">
 					<img src="../../static/main/img/electric-razor.png" class="img-responsive" style="margin-bottom: 40px;">
@@ -140,7 +140,7 @@
 				</div>
 			</div> 
 		</div>
-		<div class="row" style="margin-bottom: 100px; margin-top: 100px;">
+		<div class="row" style="margin-bottom: 100px; margin-top: 100px;font-family: 'Roboto Slab', serif;">
 			<div class="col-lg-6" style="color:#1f2226">
 				<div class="col-lg-2">
 					<img src="../../static/main/img/styling.png" class="img-responsive" style="margin-bottom: 40px;">
@@ -163,101 +163,412 @@
 	</div>
 	
 </section>
-<section  id="fourth" style="background-color: #1f2226; background-image: url(../../static/main/img/clock.png); background-position: left; background-repeat: no-repeat; background-size: 300px 100px;">
+<section class="bs-docs-section" id="openingstijden" style="background-color: #1f2226; background-image: url(../../static/main/img/clock.png); background-position: left; background-repeat: no-repeat; background-size: 450px 450px;">
 	<div class="container"> 
-		<div class="row business-hours">
-			<ul class="opening-hours">
-				<div class="col-lg-1">	
-				  	<li style="color: transparent"></li>
+		<div class="row business-hours" style="margin-top: 60px; margin-bottom: 100px;" >
+			<ul class="opening-hours" style="list-style-type: none; font-family: 'Roboto Slab', serif; color: white; ">
+				<div class="row" style="margin-left: 100px;">
+					<h1 style="color: white; font-family: 'Teko', sans-serif; font-size: 30pt; margin-bottom: 40px;">Openingstijden</h1>
 				</div>
-				<div class="col-lg-3">
-				   	<li>Monday <span >9:00-22:00</span></li>
-					<li>Tuesday <span >9:00-22:00</span></li>
-					<li>Wednesday <span >9:00-22:00</span></li>
-				</div>
-				<div class="col-lg-3">
-				   	<li>Thursday <span >9:00-22:00</span></li>
-					<li>Friday <span >9:00-23:30</span></li>
-					<li>Saturday <span >14:00-23:30</span></li>
-				</div>
-				<div class="col-lg-1">
+				<li></li>
+				<div class="row text-center">
+					<div class="col-lg-3" style="margin-right: -180px;" >					
+					</div>				
+					<div class="col-lg-1" style="margin-right: 50px;"  >
+						<li style="border: 1px solid white; border-radius: 5px; width: 125px; height: 150px; margin-right: 100px; padding:inherit;"><h1 style=" font-size: 13px; ">Maandag</h1><span style="font-size: 14pt;" >11:00<br>-</br>18:00</span></li>
+					</div>
+					<div class="col-lg-1" style="margin-right: 50px" >
+						<li style="border: 1px solid white; border-radius: 5px; width: 125px; height: 150px;  padding:inherit;"><h1 style=" font-size: 13px; ">Dinsdag</h1><span style="font-size: 14pt;" >9:30<br>-</br>18:00</span></li>
+					</div>
+					<div class="col-lg-1" style="margin-right: 50px;">
+						<li style=" border: 1px solid white; border-radius: 5px; width: 125px; height: 150px;  padding:inherit;"><h1 style=" font-size: 13px; ">Woensdag</h1><span style="font-size: 14pt;" >9:30<br>-</br>18:00</span></li>
+					</div>
+					<div class="col-lg-1" style= "margin-right: 50px; ">
+						<li style="border: 1px solid white; border-radius: 5px; width: 125px; height: 150px; padding:inherit;"><h1 style=" font-size: 13px; ">Donderdag</h1><span style="font-size: 14pt;" >9:30<br>-</br>18:00</span></li>
+					</div>
+					<div class="col-lg-1" style= "margin-right: 50px; ">
+						<li style="border: 1px solid white; border-radius: 5px; width: 125px; height: 150px; padding:inherit;"><h1 style=" font-size: 13px; ">Vrijdag</h1><span style="font-size: 14pt;" >9:00<br>-</br>18:00</span></li>
+					</div>
+					<div class="col-lg-1" style= "margin-right: 50px; ">
+						<li style="border: 1px solid white; border-radius: 5px; width: 125px; height: 150px; padding:inherit;"><h1 style=" font-size: 13px; ">Zaterdag</h1><span style="font-size: 14pt;" >9:00<br>-</br>18:00</span></li>
+					</div>
+					<div class="col-lg-3">
 					
-				</div>       														
+				</div>       	
+				</div>
+																	
 			</ul>
 		</div>
 </section>	
-<section id="fifth" style="background-color: white;">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<h1>test</h1>
-			</div>
-			<div class="col-lg-6">
-				<h1>test</h1>
-			</div>
-		</div>
-	</div>
+<section  class="bs-docs-section" id="prijslijst" style="background-color: white;">
+	<div class="container-fluid" style="padding-left: 120px; padding-top: 80px; font-family: 'Teko', sans-serif;">
+    <h1 style="font-size: 40pt;">Prijslijst</h1>
+    <p class="lead" style="padding-right: 720px; padding-bottom: 20px;font-family: 'Roboto Slab', serif;">Fayroz biedt verschillende diensten voor haarstyling. Al onze prijzen zijn inclusief btw.</p>
+    <div class="row">
+        <div class="col-sm-5">
+          
+          	<ul id="nav-tabs-wrapper" style="list-style-type: none; ">
+				<button class="btn btn-default active" style="width: 200px; height: 45px; margin-bottom: 15px;"  href="#vtab1" data-toggle="tab" ><li ><a style="color: #555555; font-size: 14pt;">Mannen<span class="glyphicon glyphicon-chevron-right" style="margin-left: 100px;"></span></a></li></button><br>
+				<button class="btn btn-default" style="width: 200px; height: 45px; margin-bottom: 15px;"  href="#vtab2" data-toggle="tab" ><li><a style="color: #555555;font-size: 14pt;">Vrouwen<span class="glyphicon glyphicon-chevron-right" style="margin-left: 100px;"></span></a></li></button><br>
+				<button class="btn btn-default" style="width: 200px; height: 45px;margin-bottom: 15px;"  href="#vtab3" data-toggle="tab" ><li><a style="color: #555555;font-size: 14pt;">Kinderen<span class="glyphicon glyphicon-chevron-right" style="margin-left: 100px;"></span></a></li></button><br>
+            </ul>
+          
+            
+        </div>
+        <div class="col-sm-7">
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="vtab1">
+                    
+                    <div >
+						<table class="table" style="width: 450px; height: 400px; margin-bottom: 120px; font-family: 'Roboto Slab', serif;">
+						  <tbody>
+						  	
+							<tr>
+							 
+							  <td>Knippen</td>
+							  <td></td>
+							  <td class="text-right">vanaf €13</td>
+							 
+							  
+							</tr>
+							<tr>
+							  <td>Wassen</td>
+							  <td></td>
+							  <td class="text-right">€5</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td>Fohnen</td>
+							  <td></td>
+							  <td class="text-right">€5</td>
+							  
+							</tr>
+							<tr>
+							 
+							  <td>Verven</td>
+							  <td></td>
+							  <td class="text-right">vanaf €17</td>
+							 
+							  
+							</tr>
+							<tr>
+							  <td>Scheren</td>
+							  <td></td>
+							  <td class="text-right">€8</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td>Epileren</td>
+							  <td></td>
+							  <td class="text-right">vanaf €5</td>
+							  
+							</tr>
+							<tr>
+							  <td>Baardbehandeling</td>
+							  <td></td>
+							  <td class="text-right">vanaf €7</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td>Counteren</td>
+							  <td></td>
+							  <td class="text-right">€5</td>
+							  
+							</tr>
+							
+						  </tbody>
+						</table>
+					</div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="vtab2">
+                    <div >
+						<table class="table" style="width: 450px; height: 900px; margin-bottom: 120px; font-family: 'Roboto Slab', serif;">
+						  <tbody>
+						  <tr>
+							 
+							  <td>Knippen drogen/föhnen kort</td>
+							  <td></td>
+							  <td class="text-right"> €17/€25</td>
+							 
+							  
+							</tr>
+							<tr>
+							  <td>Knippen drogen/föhnen halflang</td>
+							  <td></td>
+							  <td class="text-right">€18/€30</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td> Knippen drogen/föhnen lang </td>
+							  <td></td>
+							  <td class="text-right">€20/€35</td>
+							  
+							</tr>
+							<tr>
+							 
+							  <td> Föhnen kort</td>
+							  <td></td>
+							  <td class="text-right">€10</td>
+							 
+							  
+							</tr>
+							<tr>
+							  <td> Föhnen halflang</td>
+							  <td></td>
+							  <td class="text-right">€15</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td> Fohnen lang</td>
+							  <td></td>
+							  <td class="text-right"> €20</td>
+							  
+							</tr>
+							<tr>
+							  <td> Kleuren (uitgroei)</td>
+							  <td></td>
+							  <td class="text-right"> €25</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td> Folies kwart</td>
+							  <td></td>
+							  <td class="text-right">€12</td>
+							  
+							</tr>
+						  <tr>
+							 
+							  <td> Folies half</td>
+							  <td></td>
+							  <td class="text-right">€15</td>
+							 
+							  
+							</tr>
+							<tr>
+							  <td> Folies helemaal</td>
+							  <td></td>
+							  <td class="text-right">€20</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td> Balayage</td>
+							  <td></td>
+							  <td class="text-right">€35</td>
+							  
+							</tr>
+							<tr>
+							 
+							  <td> Spoeling </td>
+							  <td></td>
+							  <td class="text-right">vanaf €20</td>
+							 
+							  
+							</tr>
+							<tr>
+							  <td> Haarmatten</td>
+							  <td></td>
+							  <td class="text-right"> Prijs op aanvraag</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td> Haarmatten inzetten</td>
+							  <td></td>
+							  <td class="text-right"> Prijs op aanvrag</td>
+							  
+							</tr>
+							<tr>
+							  <td> Opsteke/vlechten</td>
+							  <td></td>
+							  <td class="text-right">vanaf €20</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td> Wenkbrauwen epileren</td>
+							  <td></td>
+							  <td class="text-right">€5</td>
+							  
+							</tr>
+						  <tr>
+							 
+							  <td> Wenkbrauwen kleuren</td>
+							  <td></td>
+							  <td class="text-right"> €5</td>
+							 
+							  
+							</tr>
+						
+						  	
+							
+						  </tbody>
+						</table>
+					</div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade in" id="vtab3">
+                    <div >
+						<table class="table" style="width: 450px; height: 200px; margin-bottom: 120px; font-family: 'Roboto Slab', serif;">
+						  <tbody>
+						  	
+							<tr>
+							  <td>Knippen tot 10 jaar</td>
+							  <td></td>
+							  <td class="text-right">€10</td>
+							 
+							</tr>
+							<tr>
+				
+							  <td>Knippen vanaf 10 jaar</td>
+							  <td></td>
+							  <td class="text-right">€13</td>
+							  
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<section id="sixth" >
-      <div class="container-fluid text-left style="background-color: #d7d7d7";">
-      	<h1>Bij ons kun je langs komen zonder afspraak. Das Hendig!</h1>
+<section id="quote" >
+      <div class="container-fluid text-left" style="background-color: #d7d7d7; background-image: url(../../static/main/img/hot-tea.png); background-size: 1600px 450px; background-position: right; background-repeat: no-repeat; padding-bottom: 100px; padding-top: 150px; padding-left: 150px; padding-right: 150px; " >
+      	<h1 style="font-size: 60pt; font-family: 'Teko', sans-serif; margin-right: 250px">Bij ons kun je langs komen zonder afspraak. Das Hendig!</h1>
+      </div>      
+</section>
+<section class="bs-docs-section"  id="contact">
+  <div class="container-fluid">
+    
+    <div class="row" style="background-color: white;">
+    	<div class="col-lg-7" style="padding-top: 80px; padding-left: 120px; padding-right: 120px;">
+          <div style="margin-bottom: 20px; ">
+            <h3 style="font-size: 40pt; font-family: 'Teko', sans-serif;">Stijladvies nodig of vragen?</h3>
+    	  </div>
+          <h4 style="font-family: 'Roboto Slab', serif;">Neem gerust met ons contact op via het onderstaande contactformulier of bel ons op <span style="font-weight: bold; ">0412 -646150</span></h4>
+        <form style="font-family: 'Roboto Slab', serif;">
+          <div class="form-group" style="margin-top: 40px;">
+            <input type="text" class="form-control" name="" value="" placeholder="Naam*" style="width: 400px; height: 50px">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="" value="" placeholder="E-mail*" style=" width: 400px; height: 50px;">
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" name="" value="" placeholder="Telefoonnummer*"  style=" width: 400px; height: 50px;">
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <textarea class="form-control" name="" rows="3" placeholder="Bericht*"  style=" width: 400px; height: 100px;"></textarea>
+          </div>
+          <h6>*Dit veld moet in gevuld worden.</h6>
+          <button class="btn btn-default" type="submit" name="button" style="width: 200px; height: 50px;  ">
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Verstuur<span class="glyphicon glyphicon-chevron-right" style="margin-left: 100px;"></span>
+          </button>
+        </form>
+        
       </div>
-      <div class="container-fluid">
-      	<div class="row text-left" style="background-color: white">
-      		<div class="col-lg-8">
-      			<h1>test</h1>
-      		</div>
-      		<div class="col-lg-4">
-      			<h1>test</h1>
-      		</div>
-      	</div>
-      	
+      <div class="col-lg-5" style="padding: 0;">
+      	<img src="../../static/main/img/IMG_8113.png" style="height: 900px; width: 900px;" class="img-responsive" alt="Responsive image">
       </div>
+    </div>
 </section>
-<section id="contact" style="background-color: #1f2226;">
-	<div class="container-fluid">
-		<div class="row">
+<section style="background-color: #1f2226;background-image: url(../../static/main/img/email.png); background-position: left; background-repeat: no-repeat; background-size: 450px 350px;">   
+	<div class="container-fluid" >
+		<div class="row" style= "padding-top:  80px;">
 			<div class="col-lg-2">
-				<h1>test</h1>				
+
 			</div>
 			<div class="col-lg-2">
-				<h1>test</h1>
+				<h4 style="font-weight: bold; color: white; font-family: 'Roboto Slab';">Contactgegevens</h4>
+			</div>
+			<div class="col-lg-1">
+
 			</div>
 			<div class="col-lg-2">
-				<h1>test</h1>
+				<h4 style="font-weight: bold; color: white; font-family: 'Roboto Slab';">Kapsalon Fayroz</h4>
+			</div>
+
+			<div class="col-lg-1">
+
 			</div>
 			<div class="col-lg-2">
-				<h1>test</h1>				
+			  <h4 style="font-weight: bold; color: white; font-family: 'Roboto Slab';">Volg ons</h4>
 			</div>
 			<div class="col-lg-2">
-				<h1>test</h1>
+
 			</div>
-			<div class="col-lg-2">
-				<h1>test</h1>
-			</div>				
+
 		</div>
-		<div class="row text-center">
-			<h1>test</h1>
+		<div class="row" style="padding-bottom: 80px;">
+			<div class="col-lg-2">
+
+			</div>
+			<div class="col-lg-2">
+				<h4 style="color: white; font-family: 'Roboto Slab';">Oude molenstraat 7a</h4>
+				<h4 style="color: white; font-family: 'Roboto Slab';">5342GA te Oss</h4>
+				<h4 style="color: white; font-family: 'Roboto Slab';">kapsalonfayroz@hotmail.com</h4>
+				<h4 style="color: white; font-family: 'Roboto Slab';">0412 - 646150</h4>
+			</div>
+			<div class="col-lg-1">
+
+			</div>
+			<div class="col-lg-2">
+				<h4 style="color: white; font-family: 'Roboto Slab';">Over ons</h4>
+				<h4 style="color: white; font-family: 'Roboto Slab';">Openingstijden</h4>
+				<h4 style="color: white; font-family: 'Roboto Slab';">Prijzen</h4>
+				<h4 style="color: white; font-family: 'Roboto Slab';">Contactformulier</h4>
+			</div>
+
+			<div class="col-lg-1">
+
+			</div>
+			<div class="col-lg-2">
+			  <img src="../../static/main/img/instagram-logo.png"  style="width: 50px; height: 50px;" href="#lol">
+			  <img src="../../static/main/img/facebook-logo-button.png" style="width: 50px; height: 50px;" href="#">
+			</div>
+			<div class="col-lg-2">
+
+			</div>
+
 		</div>
-		<div class="row">
-			<div id="map"></div>
-		</div>
-		<div class="row text-center">
-			<h1>test</h1>
-		</div>
-		
+	  </div>	
+</section> 
+<section>
+	<div class="row">
+	  <div class="col-lg-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.5359755433965!2d5.530248915779253!3d51.75980817967725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6fcf7370e85a7%3A0xc910f0e73caa20e!2sKapsalon+Fayroz!5e0!3m2!1snl!2snl!4v1522666354912" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> 
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+	<div class="container-fluid text-center" style="background-color: #1f2226; color: white; padding-top: 20px; padding-bottom: 20px;">
+			<h1 style="font-size: 13pt;">© FAYROZ. WEBDESIGN DOOR PALA MEDIA. 2018.</h1>
 	</div>
-</section>
-	<footer>
-		<div class="container-fluid" style='margin-left:15px'>
-			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
-		</div>
-	</footer>	
+</section>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="../../static/main/js/bootstrap.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
 <script src="../../static/main/js/contact.js" ></script>
 <script src="../../static/main/js/date.js"></script>
+<script src="../../static/main/js/jquery.js"></script>
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-50px";
+    }
+}
+</script>
     
     
 </body>
